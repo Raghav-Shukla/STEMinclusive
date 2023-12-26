@@ -13,24 +13,35 @@ background: '/img/bg-about.jpg'
 <title>About STEMinclusive IITK</title>
 <!-- Add your CSS stylesheets and fonts here -->
 <style>
+    .center-section {
+        text-align: center;
+    }
+    p {
+        text-align: justify;
+    }
+
+    #team-members {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
     .team-card {
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        margin: 10px;
-        padding: 10px;
-        display: inline-block;
-        width: 40%;
-        /* Adjust the width as needed */
+        width: calc(50% - 20px);
+        /* Set the width to 50% minus some spacing */
+        background-color: #f0f0f0;
+        /* Add background color for better visibility */
+        padding: 20px;
+        box-sizing: border-box;
         text-align: center;
     }
 
     .team-member-image {
-        max-width: 50%;
+        width: 50%;
+        /* Make the image fill the entire width of the card */
         border-radius: 50%;
-    }
-
-    .center-section {
-        text-align: center;
+        /* Make the image round */
     }
 </style>
 
@@ -49,11 +60,9 @@ background: '/img/bg-about.jpg'
     <main>
         <section id="about">
             <h1>About Us</h1>
-            <p>STEMinclusive IIT Kanpur was founded by Shubhan Ravi, a senior undergraduate from IIT Kanpur. We are the
-                first
-                chapter
-                of Mumbai-based social initiative <a href="https://tilden.in/stem-inclusive/index.html"
-                    target="_blank">STEMinclusive</a> of which he is a Core Team Mentor. We believe in the power
+            <p>STEMinclusive IIT Kanpur was founded by Shubhan Ravi, a senior undergraduate from IIT Kanpur. He is the Core Team Mentor of
+                of Mumbai-based <a href="https://tilden.in/stem-inclusive/index.html"
+                    target="_blank">STEMinclusive</a> and founded its first chapter at IIT Kanpur. We believe in the power
                 of representation, storytelling, and community to inspire the next generation of women in India to
                 pursue
                 their dreams in STEM fields.</p>
@@ -93,39 +102,54 @@ background: '/img/bg-about.jpg'
             </ol>
         </section>
 
-        <div class="center-section">
-            <section id="team-members">
-
-                <h2>Meet Our Team</h2>
-                <div class="team-card">
-                    <img src="ShubhanFormal.jpg" alt="Team Member 1" class="team-member-image">
-                    <h3>Shubhan Ravi</h3>
-                    <h5>Head</h5>
-                    <h7>Computer Science and Engineering</h7>
-                    <p>shubhanr20@iitk.ac.in</p>
-                </div>
-                <div class="team-card">
-                    <img src="anushka.jpg" alt="Team Member 1" class="team-member-image">
-                    <h3>Anushka Panda</h3>
-                    <h5>Advisor</h5>
-                    <h7>Computer Science and Engineering</h7>
-                    <p>apanda20@iitk.ac.in</p>
-                </div>
-                <div class="team-card">
-                    <img src="anshuman.jpg" alt="Team Member 1" class="team-member-image">
-                    <h3>Anshuman Barnwal</h3>
-                    <h5>Advisor</h5>
-                    <h7>Electrical Engineering</h7>
-                    <p>banshuman20@iitk.ac.in</p>
-                </div>
-                <!-- <div class="team-card">
-                    <img src="bg-post.jpg" alt="Team Member 3" class="team-member-image">
-                    <h3>Name 3</h3>
-                    <p>Department: Department 3</p>
-                    <p>Email: email3@example.com</p>
-                </div> -->
-            </section>
+    
+<div class="center-section">
+    <section id="team-members">
+        <div class="team-card">
+            <img src="ShubhanFormal.jpg" alt="Team Member 1" class="team-member-image">
+            <h3>Shubhan Ravi</h3>
+            <br>
+            <h5>Head</h5>
+            <br>
+            <h7>Computer Science and Engineering</h7>
+            <br>
+            <h7>shubhanr20@iitk.ac.in</h7>
+            <br>
+            <a href="https://www.linkedin.com/in/shubhan-ravi-4b8691210/" class="linkedin-icon" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
         </div>
+        <div class="team-card">
+            <img src="anushka.jpg" alt="Team Member 2" class="team-member-image">
+            <h3>Anushka Panda</h3>
+            <br>
+            <h5>Advisor</h5>
+            <br>
+            <h7>Computer Science and Engineering</h7>
+            <br>
+            <h7>apanda20@iitk.ac.in</h7>
+            <br>
+            <a href="https://www.linkedin.com/in/anushka-panda-7b055821b/" class="linkedin-icon" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <div class="team-card">
+            <img src="anshuman.jpg" alt="Team Member 3" class="team-member-image">
+            <h3>Anshuman Barnwal</h3>
+            <br>
+            <h5>Advisor</h5>
+            <br>
+            <h7>Electrical Engineering</h7>
+            <br>
+            <h7>banshuman20@iitk.ac.in</h7>
+            <br>
+            <a href="https://www.linkedin.com/in/anshumanbarnwal/" class="linkedin-icon" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <!-- Add more team members as needed -->
+    </section>
+</div>
 
     </main>
 
